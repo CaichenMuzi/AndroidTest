@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.creep623.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_main_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout" />
+
+    <Button
+        android:id="@+id/btn_main_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_frame" />
+
+    <Button
+        android:id="@+id/btn_main_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridLayout"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_relative" />
+
+    <Button
+        android:id="@+id/btn_main_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_grid" />
+
+    <Button
+        android:id="@+id/btn_main_editview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EditView"
+        app:layout_constraintTop_toBottomOf="@id/btn_main_TextView" />
+
+    <Button
+        android:id="@+id/btn_main_RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        app:layout_constraintTop_toBottomOf="@id/btn_main_editview" />
+
+    <Button
+        android:id="@+id/btn_main_ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        app:layout_constraintTop_toBottomOf="@id/btn_main_RadioButton" />
+
+
+    <Button
+        android:id="@+id/btn_main_AnalogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AnalogButton"
+        app:layout_constraintTop_toBottomOf="@id/btn_main_ToggleButton" />
+
+</android.support.constraint.ConstraintLayout>
